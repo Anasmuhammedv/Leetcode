@@ -34,7 +34,7 @@ function Power(n) {
     let i = 1;
     while (n > i) {
         i = i * 2;
-        console.log(i);
+        
     }
     console.log(n === i);
 }
