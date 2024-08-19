@@ -17,8 +17,8 @@ function findMajorityElement(nums) {
   }
   
   
-  // Example usage:
+
   const arr = [2, 2, 1, 1, 2, 2, 2,1,1,2,55];
   const majorityElement = findMajorityElement(arr);
-  console.log(majorityElement);  // Output: 2
+  console.log(majorityElement);  
   
