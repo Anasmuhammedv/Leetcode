@@ -8,9 +8,9 @@ var singleNumber = function (nums) {
       }
     }
     if (unique == true) {
-      return i;
+      return nums[i];
     }
   }
 };
 
-console.log(singleNumber([1, 2, 1, 3, 4, 3, 2]));
+console.log(singleNumber([1, 2, 1,5, 3, 4,4, 3, 2]));
