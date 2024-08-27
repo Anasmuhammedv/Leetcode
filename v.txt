@@ -1,0 +1,55 @@
+//missing number 
+
+let minimum;
+let maximum;
+
+function missing(arr) {
+    let sum
+    console.log(arr);
+    
+    minimum = Math.min(...arr)
+    maximum = Math.max(...arr)
+ for(i=minimum;i<=maximum;i++){
+     let unique = true
+     for(j=minimum;j<maximum;j++){
+        if(i == j && arr[i]==j){
+            unique = false
+            break
+        }
+     }
+     if(unique){
+        console.log(i);
+        
+    }
+     
+ }
+
+}
+
+missing([0,2,3])
+
+
+
+//Repeating index
+
+function findFirstNonRepeatingChar(str) {
+    for (let i = 0; i < str.length; i++) {
+        let isUnique = true;
+        for (let j = 0; j < str.length; j++) {
+            if (i !== j && str[i] === str[j]) {
+                isUnique = false;
+                break;
+            }
+        }
+        if (isUnique) {
+            return str.indexOf(str[i]);
+        }
+    }
+    return null; // Return null if no non-repeating character is found
+}
+
+const str = "swiwss";
+const result = findFirstNonRepeatingChar(str);
+console.log(result); // Outputs: "w"
+
+
