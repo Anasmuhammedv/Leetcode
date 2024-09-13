@@ -6,7 +6,6 @@ var findFinalValue = function(nums, original) {
     }
   }
 
-
 return original
     
 };
