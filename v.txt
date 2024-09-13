@@ -52,4 +52,19 @@ const str = "swiwss";
 const result = findFirstNonRepeatingChar(str);
 console.log(result); // Outputs: "w"
 
+//3000 question
 
+var areaOfMaxDiagonal = function(dimensions) {
+    let maxArea = 0;  
+    for(let i = 0; i < dimensions.length; i++) {
+        const diagonal = Math.sqrt(Math.pow(dimensions[i][0], 2) + Math.pow(dimensions[i][1], 2)); 
+        const area = dimensions[i][0] * dimensions[i][1];
+        
+        if (area > maxArea) {
+            maxArea = area;
+        }
+    }
+    return maxArea;
+}
+
+console.log(areaOfMaxDiagonal([[9, 3], [8, 6]]));  
